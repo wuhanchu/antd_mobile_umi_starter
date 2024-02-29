@@ -328,7 +328,7 @@ class EnterPage extends React.Component<IProps, IState> {
                         router.replace("/")
                     }}
                 >
-                    再试一次 >
+                    再试一次 
                 </div>
             </div>
         )

@@ -41,8 +41,8 @@ export default {
   define: {
     APP_TYPE: process.env.APP_TYPE || '',
   },
-  history: 'hash', // 默认是 browser
-  plugins,
+  // history:  { type: "hash" }, // 默认是 browser
+  // plugins,
   //   exportStatic: {},
   // 路由配置
   routes: pageRoutes,
@@ -53,12 +53,12 @@ export default {
     'brand-primary-tap': theme.brandPrimaryTap,
   },
   externals: {},
-  lessLoaderOptions: {
+  lessLoader: {
     javascriptEnabled: true,
   },
-  cssnano: {
-    mergeRules: false,
-  },
+  // cssnano: {
+  //   mergeRules: false,
+  // },
   targets: {
     android: 5,
     chrome: 58,
